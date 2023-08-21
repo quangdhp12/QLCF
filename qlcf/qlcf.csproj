@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7F8471BF-58A3-4B88-8A02-E99B4CB38AD5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>qlcf</RootNamespace>
+    <AssemblyName>qlcf</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="qlcfBUS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\qlcfBUS\bin\Debug\qlcfBUS.dll</HintPath>
+    </Reference>
+    <Reference Include="qlcfDAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\qlcfDAL\bin\Debug\qlcfDAL.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2016.2.503.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.UI, Version=2016.2.503.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikCommon, Version=2016.2.503.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="danhSachBan\ban1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="danhSachBan\ban1.Designer.cs">
+      <DependentUpon>ban1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="danhSachBan\ban2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="danhSachBan\ban2.Designer.cs">
+      <DependentUpon>ban2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="danhSachBan\ban3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="danhSachBan\ban3.Designer.cs">
+      <DependentUpon>ban3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="danhSachBan\ban4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="danhSachBan\ban4.Designer.cs">
+      <DependentUpon>ban4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="danhSachBan\ban5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="danhSachBan\ban5.Designer.cs">
+      <DependentUpon>ban5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="danhSachBan\ban6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="danhSachBan\ban6.Designer.cs">
+      <DependentUpon>ban6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\BanBUS.cs" />
+    <Compile Include="GUI\goiMon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\goiMon.Designer.cs">
+      <DependentUpon>goiMon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\qlNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\qlNhanVien.Designer.cs">
+      <DependentUpon>qlNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\quanLyBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\quanLyBan.Designer.cs">
+      <DependentUpon>quanLyBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\quanLyThucDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\quanLyThucDon.Designer.cs">
+      <DependentUpon>quanLyThucDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="danhSachBan\ban1.resx">
+      <DependentUpon>ban1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="danhSachBan\ban2.resx">
+      <DependentUpon>ban2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="danhSachBan\ban3.resx">
+      <DependentUpon>ban3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="danhSachBan\ban4.resx">
+      <DependentUpon>ban4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="danhSachBan\ban5.resx">
+      <DependentUpon>ban5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="danhSachBan\ban6.resx">
+      <DependentUpon>ban6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\goiMon.resx">
+      <DependentUpon>goiMon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\qlNhanVien.resx">
+      <DependentUpon>qlNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\quanLyBan.resx">
+      <DependentUpon>quanLyBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\quanLyThucDon.resx">
+      <DependentUpon>quanLyThucDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-thucdon-cafe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu-tan-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tan-info.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
